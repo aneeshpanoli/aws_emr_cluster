@@ -1,3 +1,6 @@
 sudo docker exec jupyterhub /usr/bin/apt-get update
 
 sudo docker exec jupyterhub pip install package
+
+disconnect tunnel
+lsof -ti:8157 | xargs kill -9
